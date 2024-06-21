@@ -44,19 +44,19 @@
             <div class="col-lg-4 col-md-12 col-sm-12" id="html">
                 <div class="container-fluid border rounded p-1 bg-dark text-light editor">
                     <textarea id="htmlCode" placeholder="HTML Code" 
-					oninput="showPreview()"></textarea>
+                        oninput="showPreview(); saveCode('htmlCode')"></textarea>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12" id="css">
                 <div class="container-fluid border rounded p-1 bg-dark text-light editor">
                     <textarea id="cssCode" placeholder="CSS Code" 
-					oninput="showPreview()"></textarea>
+                        oninput="showPreview(); saveCode('cssCode')"></textarea>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12" id="js">
                 <div class="container-fluid border rounded p-1 bg-dark text-light editor">
                     <textarea id="jsCode" placeholder="JavaScript Code" 
-					oninput="showPreview()"></textarea>
+                        oninput="showPreview(); saveCode('jsCode')"></textarea>
                 </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 mt-2 mb-2" id="result">
@@ -73,7 +73,9 @@
             <a class="text-reset fw-bold" href="https://ahmed0saber.github.io/bootstrap-projects/portfolio/" target="_blank">Ahmed Saber</a>
         </div>
     </footer>
+
+    <!-- Scripts at the end of body -->
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
-<script src="./bootstrap/bootstrap.bundle.min.js"></script>
-<script src="./js/app.js"></script>
 </html>
